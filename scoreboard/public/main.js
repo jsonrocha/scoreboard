@@ -85,3 +85,45 @@ const button2MinusClickEvent = () => {
 document.querySelector('.my-button2minus').addEventListener('click', button2MinusClickEvent)
 
 //Team 1 name
+
+const buttonNameClickEvent = () => {
+  console.log('button was click')
+
+  // query the DOM for the current value
+  let currentName = document.querySelector('.name1').textContent
+
+  console.log(currentName)
+
+  // Add 1 to it
+  // currentValue += 1 does not work because of types
+
+  newName = document.querySelector('.input1').value
+
+  //put the new value back into the DOM
+  document.querySelector('.name1').textContent = newName
+
+}
+
+document.querySelector('.inputbutton').addEventListener('click', buttonNameClickEvent)
+
+//Team 2 name
+
+const buttonName2ClickEvent = () => {
+  console.log('button was click')
+
+  // query the DOM for the current value
+  let currentName = document.querySelector('.name2').textContent
+
+  console.log(currentName)
+
+  // Add 1 to it
+  // currentValue += 1 does not work because of types
+
+  newName = document.querySelector('.input2').value
+
+  //put the new value back into the DOM
+  document.querySelector('.name2').textContent = newName
+
+}
+
+document.querySelector('.inputbutton2').addEventListener('click', buttonName2ClickEvent)
